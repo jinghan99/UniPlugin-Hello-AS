@@ -5,24 +5,6 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
-		},
-		{
-			"path": "pages/sample/ext-module",
-			"style": {
-				"navigationBarTitleText": "扩展 module"
-			}
-		},
-		{
-			"path": "pages/sample/ext-component",
-			"style": {
-				"navigationBarTitleText": "扩展 component"
-			}
-		},
-		{
-			"path": "pages/sample/richAlert",
-			"style": {
-				"navigationBarTitleText": "RichAlert"
-			}
 		}
 	],
 	"globalStyle": {
