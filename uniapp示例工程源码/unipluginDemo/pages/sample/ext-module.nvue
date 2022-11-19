@@ -2,6 +2,7 @@
 	<div>
 		<button type="primary" @click="testAsyncFunc">testAsyncFunc</button>
 		<button type="primary" @click="testSyncFunc">testSyncFunc</button>
+		<button type="primary" @click="HelloWorldModule">HelloWorldModule</button>
 		<button type="primary" @click="gotoNativePage">跳转原生Activity</button>
 	</div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 	// 获取 module 
 	var testModule = uni.requireNativePlugin("TestModule")
+	var HelloModule = uni.requireNativePlugin("HelloWorldModule")
 	const modal = uni.requireNativePlugin('modal');
 	export default {
 		onLoad() {
@@ -37,6 +39,17 @@
 				// 调用同步方法
 				var ret = testModule.testSyncFunc({
 					'name': 'unimp',
+					'age': 1
+				})
+				modal.toast({
+					message: ret,
+					duration: 1.5
+				});
+			},
+			HelloWorldModule() {
+				// 调用同步方法
+				var ret = HelloModule.hello({
+					'name': 'HelloWorldModule',
 					'age': 1
 				})
 				modal.toast({

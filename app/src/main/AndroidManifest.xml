@@ -82,9 +82,10 @@
                     android:scheme=" " />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="dcloud_appkey"
-            android:value="开发者需登录https://dev.dcloud.net.cn/申请签名" />
+            android:value="74ef30a1f54a53570722052727c63fe8" />
     </application>
 
 </manifest>

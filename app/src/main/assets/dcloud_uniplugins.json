@@ -12,6 +12,15 @@
     {
       "plugins": [
         {
+          "type": "module",
+          "name": "HelloWorldModule",
+          "class": "io.dcloud.uniplugin.HelloWorldModule"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
           "type": "component",
           "name": "myText",
           "class": "io.dcloud.uniplugin.TestText"
